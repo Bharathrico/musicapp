@@ -17,6 +17,10 @@
 
     <div class="holder">
         La la la la la la ,listen to music or play a video
+        <button id="music"><a href="#second"><img src="./buttons/Untitled-2.gif" width=80% height=80%></img></a>
+        </button>
+
+        <div id="promptmusic">Click to move to the music tab</div>
     </div>
 
     <div class="boxboye"></div>
@@ -47,13 +51,18 @@
         <circle cx="248.63" cy="71.87" r="60.96" fill="url(#linear-gradient-2)" />
         <circle cx="74.47" cy="43.1" r="43.1" fill="url(#linear-gradient-3)" />
     </svg>
-    <div class="second">
+    <div id="second">
         <div class="cover"><img class="coverart" src="./coverart/stranger.jpeg"></img></div>
+        <div class="colors"></div>
         <div class="musicapp">
             <button id="previous" onclick="previous()"><img src='./buttons/previous.png' height=90%
                     width="90%"></img></button>
+            <button id="seekright" onclick="seekleft()"><img src='./buttons/seekleft.png' height=90%
+                    width="90%"></button>
             <button id="play" onclick="playorpause()"><img src='./buttons/pause.png' height=90%
                     width="90%"></img></button>
+            <button id="seekright" onclick="seekright()"><img src='./buttons/seekright.png' height=90%
+                    width="90%"></button>
             <button id="next" onclick="next()"><img src='./buttons/next.png' height=90% width="90%"></img></button>
         </div>
         <div id="artname"></div>
@@ -62,6 +71,8 @@
             <div id="fill"></div>
             <div id="handle"></div>
         </div>
+        <div id="currenttime">00:00</div>
+        <div id="duration">00:00</div>
     </div>
 
 
